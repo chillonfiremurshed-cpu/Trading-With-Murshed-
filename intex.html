@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum AI Matrix - Ultra Premium Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #030712;
+            --panel-bg: rgba(17, 24, 39, 0.45);
+            --panel-solid: #0b0f19;
+            --border-color: rgba(255, 255, 255, 0.05);
+            --border-glow: rgba(240, 185, 11, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --primary-gold: #f0b90b;
+            --gold-glow: rgba(240, 185, 11, 0.2);
+            --green-smooth: #10b981;
+            --green-glow: rgba(16, 185, 129, 0.2);
+            --red-smooth: #ef4444;
+            --red-glow: rgba(239, 68, 68, 0.2);
+            --warning-orange: #f59e0b;
+            --ict-blue: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(240, 185, 11, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.03) 0px, transparent 50%);
+            color: var(--text-main);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Webkit Scrollbar Customization */
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-gold); }
+
+        /* Premium Header UI */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            background: rgba(3, 7, 18, 0.8);
+            border-bottom: 1px solid var(--border-color);
+            height: 70px;
+            backdrop-filter: blur(12px);
+            z-index: 100;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            width: 10px;
+            height: 10px;
+            background: var(--primary-gold);
+            border-radius: 2px;
+            box-shadow: 0 0 10px var(--primary-gold);
+        }
+        .logo span { color: var(--primary-gold); font-weight: 500; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; margin-left: 5px;}
+
+        .time-panel {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 6px 18px;
+            border-radius: 100px;
+            border: 1px solid var(--border-color);
+        }
+
+        .time-block { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: #ffffff; }
+        .time-block span { color: var(--text-muted); margin-right: 4px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight
